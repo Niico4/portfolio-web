@@ -15,7 +15,11 @@ const HomePage = () => {
       style={{ minHeight: 'calc(100vh - 76px' }}
     >
       <figure className="max-w-[460px]">
-        <img src="/hero.png" alt="Ilustración" />
+        <img
+          src="/hero.png"
+          alt="Ilustración"
+          style={{ filter: 'drop-shadow(5px 5px 5px #000)' }}
+        />
       </figure>
       <Card
         isBlurred

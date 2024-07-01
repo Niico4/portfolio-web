@@ -1,3 +1,4 @@
+import { paths } from '@/constant/routePath';
 import { Button } from '@nextui-org/react';
 import {
   IconBrandGithub,
@@ -6,13 +7,16 @@ import {
   IconFileCv,
   IconMail,
 } from '@tabler/icons-react';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav className="max-w-[50%] flex items-center justify-between mx-auto py-5">
-      <h1 className="text-3xl font-semibold text-white">
-        Nicolas <span className="textAnimate">Garzón</span>
-      </h1>
+      <NavLink to={paths.home}>
+        <h1 className="text-3xl font-semibold text-white">
+          Nicolas <span className="textAnimate">Garzón</span>
+        </h1>
+      </NavLink>
 
       <ul className="flex items-center gap-4 text-white">
         <li className="hover:text-primary-blue hover:scale-110 transition-all">

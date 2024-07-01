@@ -4,7 +4,8 @@ import {
   workExperienceData,
 } from '@/data/AboutMe/workExperience';
 import CountUp from 'react-countup';
-import { Divider } from '@nextui-org/react';
+import { Chip, Divider } from '@nextui-org/react';
+import { skillsData } from '@/data/AboutMe/skills';
 
 const AboutMePage = () => {
   return (
@@ -55,6 +56,28 @@ const AboutMePage = () => {
             </li>
           ))}
         </ol>
+      </article>
+      <article className="w-1/3 overflow-hidden">
+        <div className="loopAnimationSkills">
+          {skillsData.map(({ languages }) => (
+            <>
+              {languages.map(({ skill }, index) => (
+                <Chip key={index} variant="flat" color="default" radius="sm">
+                  <span className="text-white/90 font-light">{skill}</span>
+                </Chip>
+              ))}
+            </>
+          ))}
+          {skillsData.map(({ languages }) => (
+            <>
+              {languages.map(({ skill }, index) => (
+                <Chip key={index} variant="flat" color="default" radius="sm">
+                  <span className="text-white/90 font-light">{skill}</span>
+                </Chip>
+              ))}
+            </>
+          ))}
+        </div>
       </article>
     </section>
   );
