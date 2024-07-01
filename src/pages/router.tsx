@@ -12,6 +12,7 @@ import HomePage from './home';
 import PortfolioPage from './portfolio';
 import DockComponent from '@/layouts/Dock';
 import ServicesPage from './services';
+import CertificationsPage from './certifications';
 
 export default function AppRouter() {
   return (
@@ -25,6 +26,8 @@ export default function AppRouter() {
           <Route path={paths.portfolio} element={<PortfolioPage />} />
           <Route path={paths.aboutMe} element={<AboutMePage />} />
           <Route path={paths.services} element={<ServicesPage />} />
+
+          <Route path={paths.certifications} element={<CertificationsPage />} />
         </Routes>
 
         <DockComponent />
