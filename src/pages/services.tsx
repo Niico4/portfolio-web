@@ -1,11 +1,5 @@
-import { cardServicesData } from '@/data/Services/cardsServices';
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-} from '@nextui-org/react';
+import { services } from '@/data/myServices';
+import { Card, CardBody, CardHeader } from '@nextui-org/react';
 import Atropos from 'atropos/react';
 
 const ServicesPage = () => {
@@ -31,14 +25,10 @@ const ServicesPage = () => {
           UI/UX, estoy listo para llevar tus proyectos al siguiente nivel.
           Explora mis servicios a continuación.
         </p>
-
-        <CardFooter className="justify-end">
-          <Button color="primary">Contacta conmigo</Button>
-        </CardFooter>
       </Card>
 
       <article className="w-1/2 flex justify-center gap-5 flex-wrap">
-        {cardServicesData.map(({ title, description }, index) => (
+        {services.map(({ title, description }, index) => (
           <Atropos
             className="max-w-[300px] h-[300px]"
             key={index}

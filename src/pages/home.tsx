@@ -1,11 +1,5 @@
 import { paths } from '@/constant/routePath';
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-} from '@nextui-org/react';
+import { Button, Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react';
 import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {
@@ -16,7 +10,7 @@ const HomePage = () => {
     >
       <figure className="max-w-[460px]">
         <img
-          src="/hero.png"
+          src="/hero.webp"
           alt="Ilustración"
           style={{ filter: 'drop-shadow(5px 5px 5px #000)' }}
         />

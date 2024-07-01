@@ -1,4 +1,4 @@
-export const workExperienceData = [
+export const workExperience = [
   {
     title: 'Desarrollador Freelancer',
     date: 'Último trabajo',
@@ -13,7 +13,7 @@ export const workExperienceData = [
   },
 ];
 
-export const experiencesData = [
+export const countExperience = [
   {
     count: 2,
     label: 'Años de experiencia',

@@ -1,4 +1,6 @@
-export const certificationsData = [
+import { paths } from '@/constant/routePath';
+
+export const certifications = [
   {
     id: 'html',
     image: '/certificado-html.webp',
@@ -18,5 +20,22 @@ export const certificationsData = [
     id: 'ts',
     image: '/certificado-ts.webp',
     url: 'https://www.udemy.com/certificate/UC-0d2c70fe-ce8b-4a65-800c-89c6e62b97fc/',
+  },
+];
+
+export const studies = [
+  {
+    title: 'SENA',
+    icon: '/logoSena.webp',
+    date: 'Actualmente',
+    url: '/constanciaTituladaPresencialSena.pdf',
+    studyCareer: 'Análisis y Desarrollo de Software',
+  },
+  {
+    title: 'Udemy',
+    icon: '/logoUdemy.webp',
+    date: '2021 - Actualmente',
+    url: paths.certifications,
+    studyCareer: 'Desarrollo Web',
   },
 ];

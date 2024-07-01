@@ -1,16 +1,15 @@
 import { Dock, DockIcon } from '@/components/magicui/dock';
 import { paths } from '@/constant/routePath';
 import {
-  IconHome,
   IconDeviceLaptop,
-  IconUser,
   IconFileDescription,
+  IconHome,
+  IconUser,
 } from '@tabler/icons-react';
-import { ReactElement } from 'react';
-import { NavLink } from 'react-router-dom';
 import { MotionValue, useMotionValue } from 'framer-motion';
+import { ReactElement } from 'react';
 import React from 'react';
-import { Tooltip } from '@nextui-org/react';
+import { NavLink } from 'react-router-dom';
 
 const items = [
   {
@@ -41,23 +40,21 @@ const DockIconComponent = ({
   mouseX: MotionValue<number>;
 }) => {
   return (
-    <Tooltip>
-      <DockIcon
-        className="hover:bg-primary-blue/50 transition-background"
-        mouseX={mouseX}
+    <DockIcon
+      className="hover:bg-primary-blue/50 transition-background"
+      mouseX={mouseX}
+    >
+      <NavLink
+        to={path}
+        className={({ isActive }) =>
+          `${
+            isActive ? 'isActive' : 'text-custom-secondary'
+          } w-full h-full flex items-center justify-center rounded-full`
+        }
       >
-        <NavLink
-          to={path}
-          className={({ isActive }) =>
-            `${
-              isActive ? 'isActive' : 'text-custom-secondary'
-            } w-full h-full flex items-center justify-center rounded-full`
-          }
-        >
-          {icon}
-        </NavLink>
-      </DockIcon>
-    </Tooltip>
+        {icon}
+      </NavLink>
+    </DockIcon>
   );
 };
 
@@ -73,7 +70,6 @@ const DockComponent = () => {
       {items.map(({ path, icon }, index) => (
         <React.Fragment key={index}>
           <DockIconComponent path={path} icon={icon} mouseX={mouseX} />
-          {/* {index < items.length - 1 && <Divider orientation="vertical" />} */}
         </React.Fragment>
       ))}
     </Dock>

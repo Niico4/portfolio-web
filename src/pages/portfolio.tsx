@@ -1,4 +1,4 @@
-import { projectsData } from '@/data/Projects/projects';
+import { projects } from '@/data/myProjects';
 import {
   Button,
   Card,
@@ -20,7 +20,7 @@ const PortfolioPage = () => {
       </h2>
 
       <article className="flex items-center justify-center gap-10">
-        {projectsData.map(({ title, img, description, badges }, index) => (
+        {projects.map(({ title, img, description, badges }, index) => (
           <Card
             isBlurred
             key={index}

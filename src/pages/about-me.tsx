@@ -1,11 +1,11 @@
-import { IconBriefcase } from '@tabler/icons-react';
-import {
-  experiencesData,
-  workExperienceData,
-} from '@/data/AboutMe/workExperience';
+import { countExperience } from '@/data/workExperience';
+import EducationSection from '@/sections/about-me/Education';
+import WorkExperienceSection from '@/sections/about-me/WorkExperience';
+import { Divider } from '@nextui-org/react';
 import CountUp from 'react-countup';
-import { Chip, Divider } from '@nextui-org/react';
-import { skillsData } from '@/data/AboutMe/skills';
+import { Fragment } from 'react/jsx-runtime';
+
+import SkillsSection from '../sections/about-me/Skills';
 
 const AboutMePage = () => {
   return (
@@ -18,66 +18,36 @@ const AboutMePage = () => {
       </h2>
 
       <article className="flex items-center justify-center gap-5">
-        {experiencesData.map(({ count, label }, index) => (
-          <>
-            <div className={`flex flex-col items-center`} key={index}>
+        {countExperience.map(({ count, label }, index) => (
+          <Fragment key={index}>
+            <div className={`flex flex-col items-center`}>
               <p className="text-primary-blue font-bold text-3xl">
                 + <CountUp end={count} start={0} duration={5} />
               </p>
               <p className="font-light text-sm">{label}</p>
             </div>
 
-            {index < experiencesData.length - 1 && (
+            {index < countExperience.length - 1 && (
               <Divider
                 orientation="vertical"
                 style={{ background: '#9ca3af', height: '56px' }}
               />
             )}
-          </>
+          </Fragment>
         ))}
       </article>
 
-      <article>
-        <ol className="relative border-s border-gray-700 max-w-[40%] mx-auto mt-10">
-          {workExperienceData.map(({ title, date, description }, index) => (
-            <li className="mb-10 ms-6" key={index}>
-              <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-gray-900 bg-blue-900">
-                <IconBriefcase size={14} color="#c2c2c2" />
-              </span>
-              <h3 className="flex items-center mb-1 text-xl font-semibold text-white">
-                {title}
-              </h3>
-              <time className="block mb-2 text-xs leading-none text-blue-300">
-                {date}
-              </time>
-              <p className="mb-4 text-sm text-primary-font font-light">
-                {description}
-              </p>
-            </li>
-          ))}
-        </ol>
-      </article>
+      <div className="w-full flex items-start justify-evenly">
+        <article>
+          <WorkExperienceSection />
+        </article>
+
+        <article>
+          <EducationSection />
+        </article>
+      </div>
       <article className="w-1/3 overflow-hidden">
-        <div className="loopAnimationSkills">
-          {skillsData.map(({ languages }) => (
-            <>
-              {languages.map(({ skill }, index) => (
-                <Chip key={index} variant="flat" color="default" radius="sm">
-                  <span className="text-white/90 font-light">{skill}</span>
-                </Chip>
-              ))}
-            </>
-          ))}
-          {skillsData.map(({ languages }) => (
-            <>
-              {languages.map(({ skill }, index) => (
-                <Chip key={index} variant="flat" color="default" radius="sm">
-                  <span className="text-white/90 font-light">{skill}</span>
-                </Chip>
-              ))}
-            </>
-          ))}
-        </div>
+        <SkillsSection />
       </article>
     </section>
   );

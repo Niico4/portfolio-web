@@ -1,4 +1,4 @@
-export const cardServicesData = [
+export const services = [
   {
     title: 'Desarrollo de Landing Pages',
     description:

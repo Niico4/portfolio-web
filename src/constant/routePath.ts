@@ -3,4 +3,5 @@ export const paths = {
   portfolio: '/portfolio',
   aboutMe: '/about-me',
   services: '/services',
+  certifications: '/certifications',
 };
