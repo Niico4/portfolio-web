@@ -51,6 +51,7 @@ const DockIconComponent = ({
             isActive ? 'isActive' : 'text-custom-secondary'
           } w-full h-full flex items-center justify-center rounded-full`
         }
+        unstable_viewTransition
       >
         {icon}
       </NavLink>

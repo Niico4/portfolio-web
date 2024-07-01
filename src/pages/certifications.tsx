@@ -13,7 +13,7 @@ const CertificationsPage = () => {
       <div className="flex flex-wrap items-center justify-center gap-10">
         {certifications.map(({ image, url }, index) => (
           <Atropos key={index} className="max-w-[400px]">
-            <a href={url}>
+            <a href={url} target="_blank" rel="noopener noreferrer">
               <figure className="max-w-[400px]">
                 <img
                   src={image}
