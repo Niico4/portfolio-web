@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #7cc1fd;
+  --colorLight-font: #e2e2e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Urbanist Variable', sans-serif;
+  background: rgb(7, 37, 74);
+  background: radial-gradient(
+    circle,
+    rgba(7, 27, 74, 1) 0%,
+    rgb(24, 24, 24) 100%
+  );
+  min-height: 100vh;
+  min-width: 100vw;
+
+  color: var(--colorLight-font);
+}
+
+.isActive {
+  --color-primary: rgba(124, 193, 253, 0.6);
+
+  background-color: var(--color-primary);
+}
+
+.textAnimate {
+  background: linear-gradient(
+    to right,
+    #005cd4 20%,
+    #38b6ff 40%,
+    #38b6ff 60%,
+    #005cd4 80%
+  );
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  /* font-size: 32px; */
+  font-weight: 600;
+  animation: text 4s linear infinite;
+}
+
+@keyframes text {
+  to {
+    background-position: 200% center;
+  }
+}
