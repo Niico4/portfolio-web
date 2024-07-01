@@ -1,14 +1,22 @@
 import { paths } from '@/constant/routePath';
-import { Button, Card, CardBody, CardFooter, CardHeader } from '@nextui-org/react';
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+} from '@nextui-org/react';
 import { NavLink } from 'react-router-dom';
 
 const HomePage = () => {
   return (
     <section
-      className="flex items-center justify-evenly"
-      style={{ minHeight: 'calc(100vh - 76px' }}
+      className="flex flex-col items-center mt-5 lg:mt-0 lg:justify-evenly lg:flex-row"
+      style={{
+        minHeight: window.innerWidth <= 800 ? '100%' : 'calc(100vh - 76px',
+      }}
     >
-      <figure className="max-w-[460px]">
+      <figure className="max-w-[460px] md:max-w-[360px]">
         <img
           src="/hero.webp"
           alt="Ilustración"
@@ -18,7 +26,7 @@ const HomePage = () => {
       <Card
         isBlurred
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
-        className="max-w-[500px] p-5"
+        className="max-w-[500px] p-2 lg:p-5"
       >
         <CardHeader>
           <h2 className="text-primary-font text-4xl font-medium">

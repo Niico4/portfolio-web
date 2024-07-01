@@ -13,7 +13,7 @@ const AboutMePage = () => {
       className="flex flex-col items-center justify-center gap-5"
       style={{ minHeight: 'calc(100vh - 76px' }}
     >
-      <h2 className="text-3xl mb-10">
+      <h2 className="text-3xl mb-10 text-center">
         Mi <span className="textAnimate">trayectoria profesional</span>
       </h2>
 
@@ -24,7 +24,7 @@ const AboutMePage = () => {
               <p className="text-primary-blue font-bold text-3xl">
                 + <CountUp end={count} start={0} duration={5} />
               </p>
-              <p className="font-light text-sm">{label}</p>
+              <p className="font-light text-sm text-center">{label}</p>
             </div>
 
             {index < countExperience.length - 1 && (
@@ -37,7 +37,7 @@ const AboutMePage = () => {
         ))}
       </article>
 
-      <div className="w-full flex items-start justify-evenly">
+      <div className="w-full flex flex-col items-center justify-evenly lg:gap-10 lg:items-start lg:flex-row">
         <article>
           <WorkExperienceSection />
         </article>
@@ -46,7 +46,7 @@ const AboutMePage = () => {
           <EducationSection />
         </article>
       </div>
-      <article className="w-1/3 overflow-hidden">
+      <article className="w-full xl:w-1/3 overflow-hidden xl:mb-10">
         <SkillsSection />
       </article>
     </section>

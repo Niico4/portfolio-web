@@ -11,7 +11,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav className="max-w-[50%] flex items-center justify-between mx-auto py-5">
+    <nav className="max-w-[80%] flex flex-col items-center justify-between gap-3 mx-auto py-5 lg:max-w-[50%] lg:flex-row">
       <NavLink to={paths.home}>
         <h1 className="text-3xl font-semibold text-white">
           Nicolas <span className="textAnimate">Garzón</span>

@@ -64,7 +64,7 @@ const DockComponent = () => {
 
   return (
     <Dock
-      className="absolute bottom-5 flex justify-center w-full"
+      className="xl:absolute xl:bottom-5 flex justify-center w-full"
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
     >

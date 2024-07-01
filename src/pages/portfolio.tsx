@@ -12,14 +12,16 @@ import { IconBrandGithub, IconLink } from '@tabler/icons-react';
 const PortfolioPage = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-20"
-      style={{ minHeight: 'calc(100vh - 76px' }}
+      className="flex flex-col items-center justify-center gap-5 lg:gap-20"
+      style={{
+        minHeight: window.innerWidth <= 800 ? '100vh' : 'calc(100vh - 76px',
+      }}
     >
-      <h2 className="text-white text-3xl text-center">
+      <h2 className="text-white text-3xl text-center mt-5 lg:mt-0">
         Mis últimos <span className="textAnimate">trabajos realizados</span>
       </h2>
 
-      <article className="flex items-center justify-center gap-10">
+      <article className="flex xl:items-center justify-center gap-3 flex-wrap lg:gap-10">
         {projects.map(({ title, img, description, badges }, index) => (
           <Card
             isBlurred

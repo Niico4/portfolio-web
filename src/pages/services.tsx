@@ -5,7 +5,7 @@ import Atropos from 'atropos/react';
 const ServicesPage = () => {
   return (
     <section
-      className="flex items-center justify-center gap-20"
+      className="flex flex-col items-center justify-center gap-5 lg:mt-10 lg:gap-20 xl:flex-row"
       style={{ minHeight: 'calc(100vh - 76px' }}
     >
       <Card
@@ -27,16 +27,16 @@ const ServicesPage = () => {
         </p>
       </Card>
 
-      <article className="w-1/2 flex justify-center gap-5 flex-wrap">
+      <article className="w-full 2xl:w-1/2 flex justify-center gap-5 flex-wrap">
         {services.map(({ title, description }, index) => (
           <Atropos
-            className="max-w-[300px] h-[300px]"
+            className="max-w-[300px] h-[350px] lg:h-[300px]"
             key={index}
             shadow={false}
           >
             <Card
               isBlurred
-              className="max-w-[300px] h-[300px] p-3 text-primary-font border border-primary-blue/60"
+              className="max-w-[300px] h-[350px] p-3 text-primary-font border border-primary-blue/60 lg:h-[300px]"
               style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
             >
               <CardHeader>
