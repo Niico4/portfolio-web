@@ -39,7 +39,7 @@ const NavBar = () => {
         </li>
         <li className="hover:text-primary-blue hover:scale-110 transition-all">
           <a
-            href="https://www.linkedin.com/in/nicolasgarzon131/"
+            href="mailto:nicogarzon131@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -56,9 +56,11 @@ const NavBar = () => {
           </a>
         </li>
         <li>
-          <Button color="primary" variant="flat" size="sm" isIconOnly>
-            <IconFileCv stroke={1.75} />
-          </Button>
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+            <Button color="primary" variant="flat" size="sm" isIconOnly>
+              <IconFileCv stroke={1.75} />
+            </Button>
+          </a>
         </li>
       </ul>
     </nav>
