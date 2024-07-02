@@ -18,7 +18,7 @@ const CertificationsPage = () => {
                 <img
                   src={image}
                   alt={`certificado ${image}`}
-                  className="w-full h-full object-cover rounded-xl"
+                  className="w-full h-full object-cover rounded-xl max-w-[400px]"
                 />
               </figure>
             </a>
