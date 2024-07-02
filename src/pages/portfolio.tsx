@@ -1,12 +1,5 @@
 import { projects } from '@/data/myProjects';
-import {
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Chip,
-} from '@nextui-org/react';
+import { Button, Card, CardBody, CardFooter, CardHeader, Chip } from '@nextui-org/react';
 import { IconBrandGithub, IconLink } from '@tabler/icons-react';
 
 const PortfolioPage = () => {
@@ -22,64 +15,72 @@ const PortfolioPage = () => {
       </h2>
 
       <article className="flex xl:items-center justify-center gap-3 flex-wrap lg:gap-10">
-        {projects.map(({ title, img, description, badges }, index) => (
-          <Card
-            isBlurred
-            key={index}
-            className="max-w-[350px] p-3"
-            style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
-          >
-            <CardHeader>
-              <h3 className="w-full text-white text-2xl font-semibold text-center">
-                {title}
-              </h3>
-            </CardHeader>
-            <CardBody>
-              <figure className="max-w-[400px]">
-                <img
-                  src={img}
-                  alt={`Imagen ${title}`}
-                  className="hover:scale-110 transition-all"
-                />
-              </figure>
-              <div
-                className={`flex ${
-                  badges.length >= 4 ? 'justify-evenly' : 'justify-center gap-5'
-                } items-center flex-wrap mb-5`}
-              >
-                {badges.map(({ label }, index) => (
-                  <Chip
-                    key={index}
-                    size="sm"
-                    radius="sm"
-                    variant="flat"
+        {projects.map(
+          ({ title, img, description, badges, url, repository }, index) => (
+            <Card
+              isBlurred
+              key={index}
+              className="max-w-[350px] p-3"
+              style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)' }}
+            >
+              <CardHeader>
+                <h3 className="w-full text-white text-2xl font-semibold text-center">
+                  {title}
+                </h3>
+              </CardHeader>
+              <CardBody>
+                <figure className="max-w-[400px]">
+                  <img
+                    src={img}
+                    alt={`Imagen ${title}`}
+                    className="hover:scale-110 transition-all"
+                  />
+                </figure>
+                <div
+                  className={`flex ${
+                    badges.length >= 4
+                      ? 'justify-evenly'
+                      : 'justify-center gap-5'
+                  } items-center flex-wrap mb-5`}
+                >
+                  {badges.map(({ label }, index) => (
+                    <Chip
+                      key={index}
+                      size="sm"
+                      radius="sm"
+                      variant="flat"
+                      color="primary"
+                    >
+                      {label}
+                    </Chip>
+                  ))}
+                </div>
+                <p className="text-primary-font text-sm">{description}</p>
+              </CardBody>
+              <CardFooter className="justify-end items-center gap-5">
+                <a href={repository} target="_blank" rel="noopener noreferrer">
+                  <Button
                     color="primary"
+                    variant="flat"
+                    size="sm"
+                    startContent={<IconBrandGithub stroke={1.75} size={18} />}
                   >
-                    {label}
-                  </Chip>
-                ))}
-              </div>
-              <p className="text-primary-font text-sm">{description}</p>
-            </CardBody>
-            <CardFooter className="justify-end items-center gap-5">
-              <Button
-                color="primary"
-                variant="flat"
-                size="sm"
-                startContent={<IconBrandGithub stroke={1.75} size={18} />}
-              >
-                Repositorio
-              </Button>
-              <Button
-                color="primary"
-                size="sm"
-                startContent={<IconLink stroke={1.75} size={18} />}
-              >
-                Sitio Web
-              </Button>
-            </CardFooter>
-          </Card>
-        ))}
+                    Repositorio
+                  </Button>
+                </a>
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  <Button
+                    color="primary"
+                    size="sm"
+                    startContent={<IconLink stroke={1.75} size={18} />}
+                  >
+                    Sitio Web
+                  </Button>
+                </a>
+              </CardFooter>
+            </Card>
+          )
+        )}
       </article>
     </section>
   );

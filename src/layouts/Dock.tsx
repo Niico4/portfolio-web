@@ -1,11 +1,6 @@
 import { Dock, DockIcon } from '@/components/magicui/dock';
 import { paths } from '@/constant/routePath';
-import {
-  IconDeviceLaptop,
-  IconFileDescription,
-  IconHome,
-  IconUser,
-} from '@tabler/icons-react';
+import { IconDeviceLaptop, IconFileDescription, IconHome, IconUser } from '@tabler/icons-react';
 import { MotionValue, useMotionValue } from 'framer-motion';
 import { ReactElement } from 'react';
 import React from 'react';

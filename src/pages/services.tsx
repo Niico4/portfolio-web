@@ -5,7 +5,7 @@ import Atropos from 'atropos/react';
 const ServicesPage = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center gap-5 lg:mt-10 lg:gap-20 xl:flex-row"
+      className="flex flex-col items-center justify-center gap-5 lg:gap-20 xl:flex-row"
       style={{ minHeight: 'calc(100vh - 76px' }}
     >
       <Card
