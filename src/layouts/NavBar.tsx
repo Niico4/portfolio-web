@@ -1,10 +1,8 @@
 import { paths } from '@/constant/routePath';
-import { Button } from '@nextui-org/react';
 import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
-  IconFileCv,
   IconMail,
 } from '@tabler/icons-react';
 import { NavLink } from 'react-router-dom';
@@ -55,13 +53,7 @@ const NavBar = () => {
             <IconBrandGithub stroke={1.75} />
           </a>
         </li>
-        <li>
-          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
-            <Button color="primary" variant="flat" size="sm" isIconOnly>
-              <IconFileCv stroke={1.75} />
-            </Button>
-          </a>
-        </li>
+        <li></li>
       </ul>
     </nav>
   );

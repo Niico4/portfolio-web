@@ -1,22 +1,29 @@
 import { paths } from '@/constant/routePath';
+import DockComponent from '@/layouts/Dock';
 import NavBar from '@/layouts/NavBar';
-import {
-  Navigate,
-  Route,
-  BrowserRouter as Router,
-  Routes,
-} from 'react-router-dom';
+import { useEffect } from 'react';
+import { Navigate, Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 
 import AboutMePage from './about-me';
+import CertificationsPage from './certifications';
 import HomePage from './home';
 import PortfolioPage from './portfolio';
-import DockComponent from '@/layouts/Dock';
 import ServicesPage from './services';
-import CertificationsPage from './certifications';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 export default function AppRouter() {
   return (
     <Router>
+      <ScrollToTop/>
       <NavBar />
 
       <main className="max-w-[80%] mx-auto relative">
