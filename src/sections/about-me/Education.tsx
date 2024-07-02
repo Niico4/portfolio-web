@@ -10,7 +10,7 @@ const EducationSection = () => {
             <img
               src={icon}
               alt={`logo ${title}`}
-              className="w-full h-full object-cover rounded-full"
+              className="max-w-full max-h-full object-cover rounded-full"
             />
           </span>
           <div className="flex justify-between items-center">

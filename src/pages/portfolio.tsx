@@ -33,7 +33,7 @@ const PortfolioPage = () => {
                   <img
                     src={img}
                     alt={`Imagen ${title}`}
-                    className="hover:scale-110 transition-all max-w-[400px]"
+                    className="hover:scale-110 transition-all max-w-full max-h-full"
                   />
                 </figure>
                 <div

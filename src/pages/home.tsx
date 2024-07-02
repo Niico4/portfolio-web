@@ -14,7 +14,7 @@ const HomePage = () => {
         <img
           src="/hero.webp"
           alt="Ilustración"
-          className="max-w-[460px] md:max-w-[360px]"
+          className="max-w-full max-h-full"
           style={{ filter: 'drop-shadow(5px 5px 5px #000)' }}
         />
       </figure>
