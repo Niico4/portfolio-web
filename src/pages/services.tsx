@@ -1,8 +1,9 @@
-import { services } from '@/data/myServices';
+import { services } from '@/locales/data-es.json';
 import { Card, CardBody, CardHeader } from '@nextui-org/react';
 import Atropos from 'atropos/react';
 
 const ServicesPage = () => {
+  const { myServices } = services;
   return (
     <section
       className="flex flex-col items-center justify-center gap-5 lg:gap-20 xl:flex-row"
@@ -28,7 +29,7 @@ const ServicesPage = () => {
       </Card>
 
       <article className="w-full 2xl:w-1/2 flex justify-center gap-5 flex-wrap">
-        {services.map(({ title, description }, index) => (
+        {myServices.map(({ title, description }, index) => (
           <Atropos
             className="max-w-[300px] h-[350px] lg:h-[300px]"
             key={index}

@@ -1,7 +1,8 @@
-import { certifications } from '@/data/education';
+import { certifications } from '@/locales/data-es.json';
 import Atropos from 'atropos/react';
 
 const CertificationsPage = () => {
+  const { certificates } = certifications;
   return (
     <section
       className="flex flex-col items-center  gap-5"
@@ -11,7 +12,7 @@ const CertificationsPage = () => {
         Mi <span className="textAnimate">certificados</span>
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-10">
-        {certifications.map(({ image, url }, index) => (
+        {certificates.map(({ image, url }, index) => (
           <Atropos key={index} className="max-w-[400px]">
             <a href={url} target="_blank" rel="noopener noreferrer">
               <figure className="max-w-[400px]">

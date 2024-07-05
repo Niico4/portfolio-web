@@ -1,11 +1,12 @@
-import { skills } from '@/data/mySkills';
+import { skills } from '@/locales/data-es.json';
 import { Chip } from '@nextui-org/react';
 import { Fragment } from 'react/jsx-runtime';
 
 const SkillsSection = () => {
+  const { mySkills } = skills;
   return (
     <div className="loopAnimationSkills">
-      {skills.map(({ languages }, index) => (
+      {mySkills.map(({ languages }, index) => (
         <Fragment key={index}>
           {languages.map(({ skill }, index) => (
             <Chip key={index} variant="flat" color="default" radius="sm">
@@ -15,7 +16,7 @@ const SkillsSection = () => {
         </Fragment>
       ))}
 
-      {skills.map(({ languages }, index) => (
+      {mySkills.map(({ languages }, index) => (
         <Fragment key={index}>
           {languages.map(({ skill }, index) => (
             <Chip key={index} variant="flat" color="default" radius="sm">

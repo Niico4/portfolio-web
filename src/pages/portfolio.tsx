@@ -1,8 +1,16 @@
-import { projects } from '@/data/myProjects';
-import { Button, Card, CardBody, CardFooter, CardHeader, Chip } from '@nextui-org/react';
+import { projects } from '@/locales/data-es.json';
+import {
+  Button,
+  Card,
+  CardBody,
+  CardFooter,
+  CardHeader,
+  Chip,
+} from '@nextui-org/react';
 import { IconBrandGithub, IconLink } from '@tabler/icons-react';
 
 const PortfolioPage = () => {
+  const { myProjects } = projects;
   return (
     <section
       className="flex flex-col items-center justify-center gap-5 lg:gap-20"
@@ -15,7 +23,7 @@ const PortfolioPage = () => {
       </h2>
 
       <article className="flex xl:items-center justify-center gap-3 flex-wrap lg:gap-10">
-        {projects.map(
+        {myProjects.map(
           ({ title, img, description, badges, url, repository }, index) => (
             <Card
               isBlurred

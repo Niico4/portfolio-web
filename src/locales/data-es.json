@@ -1,0 +1,214 @@
+{
+  "certifications": {
+    "title": "Mis certificaciones",
+    "certificates": [
+      {
+        "image": "/certificado-html.webp",
+        "url": "https://www.udemy.com/certificate/UC-b85f45c6-9e85-49ab-a2d7-ac8ca20ba6b4/"
+      },
+      {
+        "image": "/certificado-css.webp",
+        "url": "https://www.udemy.com/certificate/UC-caa20bb8-b619-4753-96cf-89b04c307808/"
+      },
+      {
+        "image": "/certificado-css-2.webp",
+        "url": "https://www.udemy.com/certificate/UC-3a832df6-9939-459b-ba51-da83b8675501/"
+      },
+      {
+        "image": "/certificado-js.webp",
+        "url": "https://www.udemy.com/certificate/UC-d99307af-48a3-46d2-9587-0fadd316a52d/"
+      },
+      {
+        "image": "/certificado-ts.webp",
+        "url": "https://www.udemy.com/certificate/UC-0d2c70fe-ce8b-4a65-800c-89c6e62b97fc/"
+      }
+    ]
+  },
+  "studies": {
+    "title": "Mis estudios",
+    "myStudies": [
+      {
+        "title": "SENA",
+        "icon": "/logoSena.webp",
+        "date": "Actualmente",
+        "url": "/constanciaTituladaPresencialSena.pdf",
+        "studyCareer": "Análisis y Desarrollo de Software"
+      },
+      {
+        "title": "Udemy",
+        "icon": "/logoUdemy.webp",
+        "date": "2021 - Actualmente",
+        "url": "/certifications",
+        "studyCareer": "Desarrollo Web"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Mis proyectos",
+    "myProjects": [
+      {
+        "img": "/spendControlDesktop.webp",
+        "title": "Control de Gastos",
+        "repository": "https://github.com/Niico4/expense-control",
+        "url": "https://spend-control.netlify.app/",
+        "description": "Este proyecto es un controlador eficiente y fácil de usar diseñado para gestionar tus gastos diarios de manera efectiva. Desarrollado utilizando tecnologías modernas como React, TypeScript, Vite y CSS, ofrece una experiencia fluida y receptiva. La idea fue tomada del curso de React de Juan Pablo de la Torre.",
+        "badges": [
+          {
+            "label": "React"
+          },
+          {
+            "label": "TypeScript"
+          },
+          {
+            "label": "CSS3"
+          },
+          {
+            "label": "Vite"
+          }
+        ]
+      },
+      {
+        "img": "/cloneSpotify.webp",
+        "title": "Replica Visual de Spotify",
+        "repository": "https://github.com/Niico4/clone-spotify",
+        "url": "https://niico4.github.io/clone-spotify/",
+        "description": "Bienvenido a mi proyecto 'Clon de Spotify', una recreación visual cautivadora de la interfaz de usuario de Spotify desarrollada íntegramente en el frontend con Next.js, TypeScript, TailwindCSS, Material UI y TSS-React.",
+        "badges": [
+          {
+            "label": "Next.js"
+          },
+          {
+            "label": "TypeScript"
+          },
+          {
+            "label": "TailwindCSS"
+          },
+          {
+            "label": "Material UI"
+          }
+        ]
+      },
+      {
+        "img": "/blogDeCafeDesktop.webp",
+        "title": "Blog de Café",
+        "repository": "https://github.com/Niico4/Blog-Coffe",
+        "url": "https://blog-coffe-html-css.netlify.app/",
+        "description": "Durante mi trayectoria como desarrollador web, tuve el placer de crear 'BlogDeCafé', un blog temático dedicado al apasionante mundo del café. Esta landing page fue meticulosamente diseñada utilizando HTML y CSS para transmitir la esencia acogedora y apetitosa del universo cafetero. La idea fue tomada del curso Desarrollo Web de Juan Pablo de la Torre.",
+        "badges": [
+          {
+            "label": "HTML"
+          },
+          {
+            "label": "CSS3"
+          }
+        ]
+      }
+    ]
+  },
+  "services": {
+    "title": "Mis Servicios",
+    "myServices": [
+      {
+        "title": "Desarrollo de Landing Pages",
+        "description": "Transformo ideas en realidades digitales impactantes. Con más de dos años de experiencia en la creación de landing pages, me aseguro de que cada proyecto sea único, atractivo y optimizado para conversiones. Mi conocimiento en frameworks como ReactJS, Next.js y Astro me permite crear sitios web dinámicos y de alto rendimiento."
+      },
+      {
+        "title": "Manejo de Frameworks Modernos",
+        "description": "Soy experto en ReactJS y tengo un nivel intermedio en Next.js. También trabajo con Astro y Vite, lo que me permite elegir las mejores herramientas para cada proyecto y garantizar soluciones eficientes y modernas."
+      },
+      {
+        "title": "Diseño de UI/UX",
+        "description": "Aunque mi especialidad es el desarrollo, también tengo habilidades en diseño UI/UX. Utilizo Figma para prototipado y creación de interfaces intuitivas y amigables. Aunque no soy un experto en elección de colores, colaboro estrechamente con diseñadores para asegurar que cada proyecto tenga un aspecto visual coherente y profesional."
+      },
+      {
+        "title": "Prototipado en Figma",
+        "description": "Ofrezco servicios de prototipado en Figma, creando maquetas detalladas y funcionales que facilitan la visualización y planificación de proyectos antes de la fase de desarrollo. Esto asegura que todas las partes interesadas estén alineadas y satisfechas con el diseño final."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "mySkills": [
+      {
+        "languages": [
+          {
+            "skill": "HTML"
+          },
+          {
+            "skill": "CSS"
+          },
+          {
+            "skill": "JavaScript"
+          },
+          {
+            "skill": "TypeScript"
+          }
+        ]
+      },
+      {
+        "languages": [
+          {
+            "skill": "React"
+          },
+          {
+            "skill": "Next JS"
+          },
+          {
+            "skill": "Material UI"
+          },
+          {
+            "skill": "TailwindCSS"
+          },
+          {
+            "skill": "Styled Components"
+          }
+        ]
+      },
+      {
+        "languages": [
+          {
+            "skill": "Figma"
+          },
+          {
+            "skill": "Adobe Photoshop"
+          },
+          {
+            "skill": "Adobe Illustrator"
+          }
+        ]
+      },
+      {
+        "languages": [
+          {
+            "skill": "GitHub"
+          },
+          {
+            "skill": "Git"
+          }
+        ]
+      }
+    ]
+  },
+  "workExperience": [
+    {
+      "title": "Desarrollador Freelancer",
+      "date": "Último trabajo",
+      "description": "En mi trayectoria como desarrollador freelance, colaboré estrechamente con un desarrollador en proyectos de desarrollo frontend, lo que me permitió fortalecer mis habilidades para resolver problemas lógicos y contribuir significativamente al diseño de interfaces. Aunque mi rol no fue formalmente dentro de una empresa, adquirí conocimientos sólidos en React, TypeScript, Tailwind CSS, Next.js, Material-UI y Styled Components. Esta experiencia colaborativa fue crucial para mi desarrollo profesional, brindándome una comprensión profunda del trabajo en equipo y la entrega de proyectos de alta calidad."
+    },
+    {
+      "title": "Desarrollador Freelancer",
+      "date": "Feb 2022 - Mar 2022",
+      "description": "Durante mi experiencia como desarrollador web, tuve la oportunidad de crear un proyecto como freelancer. En este, buscaba crear una landing page que mostrara los servicios, datos de contacto y destacara la amplia experiencia de la empresa en el sector. Implementé HTML, CSS y JavaScript para crear una interfaz intuitiva y fácil de navegar. Además, incorporé elementos interactivos y optimicé el sitio para garantizar una experiencia de usuario óptima. El resultado final fue lograr lo que el cliente esperaba obtener, reflejando mi capacidad para alcanzar los objetivos establecidos."
+    }
+  ],
+  "countExperience": [
+    {
+      "count": 2,
+      "label": "Años de experiencia"
+    },
+    {
+      "count": 20,
+      "label": "Proyectos realizados"
+    }
+  ]
+}

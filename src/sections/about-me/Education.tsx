@@ -1,10 +1,11 @@
-import { studies } from '@/data/education';
 import { IconLink } from '@tabler/icons-react';
+import { studies } from '@/locales/data-es.json';
 
 const EducationSection = () => {
+  const { myStudies } = studies;
   return (
     <ol className="relative border-s border-gray-700 max-w-[300px] mx-auto mt-10">
-      {studies.map(({ title, date, url, studyCareer, icon }, index) => (
+      {myStudies.map(({ title, date, url, studyCareer, icon }, index) => (
         <li className="mb-10 ms-6" key={index}>
           <span className="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-4 ring-black/70">
             <img

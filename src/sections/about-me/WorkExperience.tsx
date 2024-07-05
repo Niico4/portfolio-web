@@ -1,4 +1,4 @@
-import { workExperience } from '@/data/workExperience';
+import { workExperience } from '@/locales/data-es.json';
 import { IconBriefcase } from '@tabler/icons-react';
 
 const WorkExperienceSection = () => {

@@ -1,4 +1,4 @@
-import { countExperience } from '@/data/workExperience';
+import { countExperience } from '@/locales/data-es.json';
 import EducationSection from '@/sections/about-me/Education';
 import WorkExperienceSection from '@/sections/about-me/WorkExperience';
 import { Divider } from '@nextui-org/react';
