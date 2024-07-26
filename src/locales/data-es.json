@@ -93,6 +93,24 @@
         ]
       },
       {
+        "img": "/gameHaven.webp",
+        "title": "GameHaven",
+        "repository": "https://github.com/Niico4/gameapp-nodesjs",
+        "url": "https://gameapp-nodesjs.onrender.com/",
+        "description": "GameHaven es una aplicación web dinámica diseñada para los entusiastas de los videojuegos que buscan información detallada sobre sus títulos favoritos. Desarrollada con Node.js y Express en el backend, y estilizada con Tailwind CSS, esta aplicación ofrece una experiencia fluida y moderna para los usuarios.",
+        "badges": [
+          {
+            "label": "Node.js"
+          },
+          {
+            "label": "Express"
+          },
+          {
+            "label": "TailwindCSS"
+          }
+        ]
+      },
+      {
         "img": "/blogDeCafeDesktop.webp",
         "title": "Blog de Café",
         "repository": "https://github.com/Niico4/Blog-Coffe",
